@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+
+int ar[100];
+int ar_sum(int);
+
+ 
+int main(){
+int n,i;
+cin>>n;
+for(i=0;i<n;i++){
+    cin>>ar[i];
+}
+ar_sum(n);
+cout<<ar_sum(n);
+return 0;
+}
+
+int ar_sum(int n) {
+  int sum = 0;
+  for (int i = 0; i < n; i++) {
+    sum = sum + ar[i];
+  }
+  return sum;
+}
